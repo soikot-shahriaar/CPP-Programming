@@ -7,37 +7,37 @@ Enter the number of lines: 5
 A B C D E A B C D
 */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 int main()
 {
     int n;
-    printf("Enter the number of lines: ");
-    scanf("%d", &n);
+    cout << "Enter the number of lines: ";
+    cin >> n;
 
     int nsp = n - 1;
 
     for (int i = 1; i <= n; i++)
     {
-        for (int q = 1; q <= nsp; q++) // for spaces
-        {
-            printf("  ");
-        }
+        for (int q = 1; q <= nsp; q++)
+            cout << "  ";
         nsp--;
 
         for (int j = 1; j <= i; j++)
         {
-            char ch = (char)(j + 64);
-            printf("%c ", ch);
+            char ch = j + 64;
+            cout << ch << " ";
         }
 
         int a = i - 1;
         for (int k = 1; k <= i - 1; k++)
         {
-            char x = (char)(k + 64);
-            printf("%c ", x);
+            char x = k + 64;
+            cout << x << " ";
             a--;
         }
-        printf("\n");
+        cout << endl;
     }
     return 0;
 }

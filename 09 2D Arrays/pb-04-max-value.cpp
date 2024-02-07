@@ -39,4 +39,3 @@ int main()
     cout << "Index of Maximum Value is [" << max_i << "][" << max_j << "]" << endl;
     return 0;
 }
-

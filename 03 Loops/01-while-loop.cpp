@@ -9,7 +9,7 @@ int main()
         cout << i << endl;
         i++;
     }
-
+    
     return 0;
 }
 
